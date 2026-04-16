@@ -1,0 +1,15 @@
+[manifest]
+version = '1.0.0'
+dump_lua = true
+priority = 0
+
+
+
+#dont draw soul if soul draw early is set active
+[[patches]]
+[patches.pattern]
+target = '''=[SMODS _ "src/card_draw.lua"]'''
+match_indent = true
+pattern = '''if self.config.center.soul_pos and (self.config.center.discovered or self.bypass_discovery_center) then'''
+position = 'after'
+payload = '''if self.config.center.CN_soul_draw_as_highlight then return end'''

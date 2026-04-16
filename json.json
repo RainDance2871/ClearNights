@@ -1,0 +1,14 @@
+{
+	"id": "clearnights",
+	"name": "Clear Nights",
+	"display_name": "Clear Nights",
+	"author": [ "RainDance" ],
+	"description": "This mod adds two small modules designed to work best with RainyDays: --- Constellations are a new consumable type that provides persistent buffs to multiple poker hands for the rest of your run. Find them in booster packs and shops to build long-term synergy. --- Play two new decks, each with a unique mechanic, offering new challenges and changing the way you play the game.",
+	"prefix": "ClearNights",
+	"main_file": "main.lua",
+	"priority": 2,
+	"badge_colour": "4846a4",
+	"badge_text_colour": "f8f8ff",
+	"version": "0.1.0",
+	"dependencies": [ "Steamodded (>=1.0.0~BETA-1606b)" ]
+}

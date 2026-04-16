@@ -1,0 +1,19 @@
+[manifest]
+version = '1.0.0'
+dump_lua = true
+priority = 0
+
+
+
+#escher deck shuffle into deck at end of round
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+match_indent = true
+pattern = '''G.FUNCS.draw_from_hand_to_discard()'''
+position = 'at'
+payload = '''if G.GAME.CN_escher then
+    G.FUNCS.draw_from_hand_to_deck()
+else
+    G.FUNCS.draw_from_hand_to_discard()
+end'''
