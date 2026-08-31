@@ -77,7 +77,7 @@ return {
         name = "星图",
         text = {
           "本赛局内每使用过一张{C:cn_constellation}星座牌{}",
-          "这张小丑牌获得获得{C:chips}+#1#{}筹码",
+          "这张小丑牌获得{C:chips}+#1#{}筹码",
           "{C:inactive}(当前{C:chips}+#2#{C:inactive}筹码)"
         },
         unlock = {
