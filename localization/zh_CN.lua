@@ -7,7 +7,7 @@ return {
           "本模组新增两个与雨天(RainyDays)",
           "配合最佳的小型模块：",
           "——星座是一种全新的消耗牌类型，",
-          "可为多种牌型提供持续整局的增益。",
+          "可为多种牌型提供持续整个赛局的增益。",
           "在补充包和商店中找到它们，",
           "构筑长期协同。",
           "——体验两副各具独特机制的牌组，",
@@ -20,7 +20,8 @@ return {
       b_ClearNights_escher = {
         name = "埃舍尔牌组",
         text = {
-          "开局时仅有{C:attention}39{}张牌，",
+          "开局时玩家牌组",
+          "仅有{C:attention}39{}张牌",
           "将{C:attention}打出的{}和{C:attention}弃掉的",
           "牌洗回牌组"
         }
@@ -29,7 +30,7 @@ return {
       b_ClearNights_excavation = {
         name = "发掘牌组",
         text = {
-          "开局即处于{C:attention}底注#1#{}，",
+          "开局时处于{C:attention}底注#1#{}，",
           "但小丑牌槽位需要在",
           "商店中{C:attention}购买{}"
         }
@@ -43,7 +44,7 @@ return {
           "每{C:attention}售出{}一张{C:cn_constellation}星座{}牌",
           "或{C:planet}星球{}牌，",
           "这张小丑牌获得{C:mult}+#1#{}倍率",
-          "{C:inactive}（当前为{C:mult}+#2#{C:inactive}倍率）"
+          "{C:inactive}(当前{C:mult}+#2#{C:inactive}倍率)"
         }
       },
 
@@ -53,7 +54,7 @@ return {
           "如果打出的牌中",
           "包含{C:attention}玻璃牌{}，",
           "生成一张{C:cn_constellation}星座{}牌",
-          "{C:inactive}（必须有空位）"
+          "{C:inactive}(必须有空位)"
         }
       },
 
@@ -62,7 +63,7 @@ return {
         text = {
           "跳过任一{C:attention}补充包{}时，",
           "生成一张{C:cn_constellation}星座{}牌",
-          "{C:inactive}（必须有空位）"
+          "{C:inactive}(必须有空位)"
         }
       },
 
@@ -73,7 +74,7 @@ return {
           "在本{C:attention}底注{}内尚未",
           "打出过，生成一张",
           "{C:cn_constellation}星座{}牌",
-          "{C:inactive}（必须有空位）"
+          "{C:inactive}(必须有空位)"
         }
       },
 
@@ -83,7 +84,7 @@ return {
           "本赛局内每使用过一张",
           "{C:cn_constellation}星座{}牌，",
           "获得{C:chips}+#1#{}筹码",
-          "{C:inactive}（当前为{C:chips}+#2#{C:inactive}筹码）"
+          "{C:inactive}(当前{C:chips}+#2#{C:inactive}筹码)"
         },
         unlock = {
           "在一场赛局中，使用",
@@ -100,7 +101,7 @@ return {
           "{C:attention}#1#{}{C:inactive}[#2#]{}张",
           "{C:diamonds}方块{}花色牌，",
           "生成一张{C:cn_constellation}星座{}牌",
-          "{C:inactive}（必须有空位）"
+          "{C:inactive}(必须有空位)"
         }
       },
 
@@ -123,7 +124,7 @@ return {
           "每当使用一张{C:cn_constellation}星座{}牌",
           "或{C:planet}星球{}牌，",
           "这张小丑牌获得{X:mult,C:white}X#1#{}倍率",
-          "{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）"
+          "{C:inactive}(当前{X:mult,C:white}X#2#{C:inactive}倍率)"
         }
       },
 
@@ -146,7 +147,7 @@ return {
           "本赛局内每使用过一种",
           "独特的{C:planet}星球{}牌，",
           "额外获得{C:money}$#2#{}",
-          "{C:inactive}（当前为{C:money}$#3#{C:inactive}）"
+          "{C:inactive}(当前{C:money}$#3#{C:inactive})"
         },
         unlock = {
           "有{E:1,C:money}$#1#",
@@ -187,8 +188,8 @@ return {
         text = {
           "最高等级{C:attention}牌型{}每有",
           "一级获得{C:money}$#1#{}",
-          "{C:inactive}（最高{C:money}$#2#{C:inactive}）",
-          "{C:inactive}（当前为{C:money}$#3#{C:inactive}）"
+          "{C:inactive}(最高{C:money}$#2#{C:inactive})",
+          "{C:inactive}(当前{C:money}$#3#{C:inactive})"
         }
       },
 
@@ -317,7 +318,7 @@ return {
           "如果在本回合的",
           "{C:attention}第1手{}或{C:attention}第2手{}打出，",
           "生成一张{C:cn_constellation}星座{}牌",
-          "{C:inactive}（必须有空位）"
+          "{C:inactive}(必须有空位)"
         }
       },
 
@@ -368,7 +369,7 @@ return {
       clearnights_include_decks = "包含牌组",
       clearnights_money_bonus = "金钱加成",
       clearnights_plus = "+",
-      clearnights_requires_restart = "（切换选项需要重启）"
+      clearnights_requires_restart = "(切换选项需要重启)"
     },
 
     labels = {
