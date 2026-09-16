@@ -34,16 +34,6 @@ return {
     },
 
     Joker = ClearNights.config.constellations and {
-      j_RainyDays_hannysvoorwerp = {
-        name = "哈尼天体",
-        text = {
-          "每{C:attention}售出{}一张",
-          "{C:cn_constellation}星座牌{}或{C:planet}星球牌{}，",
-          "这张小丑牌获得{C:mult}+#1#{}倍率",
-          "{C:inactive}(当前{C:mult}+#2#{C:inactive}倍率)"
-        }
-      },
-
       j_RainyDays_mirror_lake = {
         name = "镜湖",
         text = {
@@ -87,16 +77,6 @@ return {
         }
       },
 
-      j_RainyDays_windowsill = {
-        name = "窗台",
-        text = {
-          "回合内每累计抽到",
-          "{C:attention}#1#{}{C:inactive}[#2#]{}张{C:diamonds}方块{}花色牌",
-          "生成一张{C:cn_constellation}星座牌{}",
-          "{C:inactive}(必须有空位)"
-        }
-      },
-
       j_astronomer = {
         name = "天文学家",
         text = {
@@ -129,21 +109,6 @@ return {
         unlock = {
           "达到底注",
           "等级{E:1,C:attention}#1#",
-        }
-      },
-
-      j_satellite = {
-        name = "卫星",
-        text = {
-          "回合结束时获得{C:money}$#1#{}，",
-          "本赛局内每使用过一种",
-          "独特的{C:planet}星球牌{}，",
-          "额外获得{C:money}$#2#{}",
-          "{C:inactive}(当前{C:money}$#3#{C:inactive})"
-        },
-        unlock = {
-          "有{E:1,C:money}$#1#",
-          "或更多"
         }
       }
     } or nil,

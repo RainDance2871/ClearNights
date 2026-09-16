@@ -21,7 +21,7 @@ SMODS.Consumable {
     for _, value in ipairs(G.handlist) do
       table[#table + 1] = value
     end
-    ClearNights.level_up_table_tailends(card, table, localize('k_all_hands'), false, 0, card.ability.chip_bonus)
+    ClearNights.level_up_table(card, table, { description = localize('k_all_hands'), chips = card.ability.chip_bonus })
   end,
   
   can_use = function(self, card)

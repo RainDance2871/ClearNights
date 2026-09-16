@@ -58,13 +58,6 @@ function ClearNights.GetDeckAtlasTable(key)
 end
 
 SMODS.Atlas {
-  key = 'Jokers',
-  path = 'Jokers.png',
-  px = 71,
-  py = 95 
-}
-
-SMODS.Atlas {
   key = 'Seals',
   path = 'Seals.png',
   px = 71,

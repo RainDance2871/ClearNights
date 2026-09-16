@@ -1,13 +1,33 @@
 return {
   descriptions = {
+    Mod = {
+      clearnights = {
+        name = "Clear Nights",
+        text = {
+          "This mod adds two small modules designed to",
+          "work best with {C:attention}RainyDays{}:",
+          " ",
+          "{C:cn_constellation}Constellations{} are a new {C:attention}consumable{} type that",
+          "provides persistent buffs to multiple {C:attention}poker hands",
+          "for the rest of your run. Find them in {C:attention}booster",
+          "{C:attention}packs{} and shops to build long-term synergy.",
+          " ",
+          "Play two new {C:attention}decks{}, each with a unique mechanic,",
+          "offering new challenges and changing the way you",
+          "play the game."
+        }
+      }
+    },
+    
     Back = {      
       b_ClearNights_escher = {
         name = "Escher Deck",
         text = {
           "Start run with only",
-          "{C:attention}39{} cards, shuffle",
+          "{C:attention}#2#{} cards, shuffle",
           "{C:attention}played{} and {C:attention}discarded",
-          "cards back into deck"
+          "cards back into deck",
+          "{C:blue}+#1#{} hand each round"
         }
       },
       
@@ -22,17 +42,7 @@ return {
       }
     },
     
-    Joker = ClearNights.config.constellations and {   
-      j_RainyDays_hannysvoorwerp = {
-        name = "Hanny's Voorwerp",
-        text = {
-          "This Joker gains {C:mult}+#1#{} Mult",
-          "whenever a {C:cn_constellation}Constellation",
-          "or {C:planet}Planet{} card is {C:attention}sold",
-          "{C:inactive}(Currently {C:mult}+#2# {C:inactive}Mult)"
-        }
-      },
-      
+    Joker = ClearNights.config.constellations and {      
       j_RainyDays_mirror_lake = {
         name = "Mirror Lake",
         text = {
@@ -80,17 +90,6 @@ return {
         }
       },
       
-      j_RainyDays_windowsill = {
-        name = "Windowsill",
-        text = {
-          "Create a {C:cn_constellation}Constellation",
-          "card every {C:attention}#1#{} {C:inactive}[#2#]{} cards",
-          "with {C:diamonds}Diamond{} suit drawn",
-          "during a round",
-          "{C:inactive}(Must have room)"
-        }
-      },
-      
       j_astronomer = {
         name = "Astronomer",
         text = {
@@ -124,21 +123,6 @@ return {
         unlock = {
           "Reach Ante",
           "level {E:1,C:attention}#1#",
-        }
-      },
-      
-      j_satellite = {
-        name = "Satellite",
-        text = {
-          "At end of round, earn {C:money}$#1#{},",
-          "plus an additional {C:money}$#2#{} for",
-          "each unique {C:planet}Planet{} card",
-          "used this run",
-          "{C:inactive}(Currently {C:money}$#3#{C:inactive})"
-        },
-        unlock = {
-          "Have {E:1,C:money}$#1#",
-          "or more"
         }
       }
     } or nil,
@@ -359,7 +343,7 @@ return {
       clearnights_hands_secret = "Secret Hands",
       clearnights_include_constellations = "Include Constellations",
       clearnights_include_decks = "Include Decks",
-      clearnights_money_bonus = "Money Bonus",
+      clearnights_money_bonus = "Money Bonus: ",
       clearnights_plus = "+",
       clearnights_requires_restart = "(Toggle options require restart)"
     },

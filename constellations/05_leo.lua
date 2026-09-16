@@ -6,7 +6,7 @@ SMODS.Consumable {
   unlocked = true,
   in_pool = function(self, args) --only appears if player has at least one poker hand above level 1
     local highest_level_poker_hand = ClearNights.highest_level_poker_hand()
-    return (highest_level_poker_hand and to_big(G.GAME.hands[highest_level_poker_hand].level) > to_big(1))
+    return (highest_level_poker_hand and G.GAME.hands[highest_level_poker_hand].level > 1)
   end,  
   config = {
     money_bonus = 9,
@@ -17,7 +17,7 @@ SMODS.Consumable {
     local highest_level_poker_hand = ClearNights.highest_level_poker_hand()
     local highest_level_poker_hand_text = localize('k_none')
     local colour = G.C.RED
-    if highest_level_poker_hand and to_big(G.GAME.hands[highest_level_poker_hand].level) > to_big(1) then
+    if highest_level_poker_hand and G.GAME.hands[highest_level_poker_hand].level > 1 then
       highest_level_poker_hand_text = localize(highest_level_poker_hand, 'poker_hands')
       colour = G.C.GREEN
     end
@@ -46,11 +46,11 @@ SMODS.Consumable {
 
     delay(0.6)
     
-    ClearNights.level_up_table_tailends(card, { ClearNights.highest_level_poker_hand() }, nil, false, -1)
+    ClearNights.level_up_table(card, ClearNights.highest_level_poker_hand(), { level = -1 })
   end,
   
   can_use = function(self, card)
     local highest_level_poker_hand = ClearNights.highest_level_poker_hand()
-    return to_big(G.GAME.hands[highest_level_poker_hand].level) > to_big(1)
+    return G.GAME.hands[highest_level_poker_hand].level > 1
   end
 }

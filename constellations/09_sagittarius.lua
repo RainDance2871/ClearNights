@@ -26,7 +26,7 @@ SMODS.Consumable {
         break
       end
     end
-    ClearNights.level_up_table_tailends(card, table, localize(card.ability.border_hand, 'poker_hands') .. '+', false, 0, nil, nil, card.ability.money_bonus)
+    ClearNights.level_up_table(card, table, { description = localize(card.ability.border_hand, 'poker_hands') .. '+', money = card.ability.money_bonus })
   end,
   
   can_use = function(self, card)

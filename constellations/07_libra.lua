@@ -28,7 +28,7 @@ SMODS.Consumable {
     end
     
     local random_hand = pseudorandom_element(hands, pseudoseed('libra' .. G.GAME.round_resets.ante))
-    ClearNights.level_up_table_tailends(card, { random_hand }, nil, false, 0, card.ability.chip_bonus, card.ability.mult_bonus)
+    ClearNights.level_up_table(card, random_hand, { chips = card.ability.chip_bonus, mult = card.ability.mult_bonus })
   end,
 
   can_use = function(self, card)

@@ -20,7 +20,7 @@ SMODS.Consumable {
   end,
   
   use = function(self, card, area, copier)    
-    ClearNights.level_up_table_tailends(card, { ClearNights.lowest_level_poker_hand() }, nil, false, card.ability.level_amount)
+    ClearNights.level_up_table(card, ClearNights.lowest_level_poker_hand(), { level = card.ability.level_amount })
   end,
 
   can_use = function(self, card)

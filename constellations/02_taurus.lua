@@ -16,11 +16,12 @@ SMODS.Consumable {
     }
   end,
   
-  use = function(self, card, area, copier)local table = {}
+  use = function(self, card, area, copier)
+    local table = {}
     for _, value in ipairs(G.handlist) do
       table[#table + 1] = value
     end
-    ClearNights.level_up_table_tailends(card, table, localize('k_all_hands'), false, 0, nil, card.ability.mult_bonus)
+    ClearNights.level_up_table(card, table, { description = localize('k_all_hands'), mult = card.ability.mult_bonus })
   end,
   
   can_use = function(self, card)

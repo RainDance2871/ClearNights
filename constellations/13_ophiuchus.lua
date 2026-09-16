@@ -35,7 +35,7 @@ SMODS.Consumable {
         table[#table + 1] = value
       end
     end
-    ClearNights.level_up_table_tailends(card, table, localize('clearnights_hands_secret'), false, 0, card.ability.chip_bonus, card.ability.mult_bonus)
+    ClearNights.level_up_table(card, table, { description = localize('clearnights_hands_secret'), chips = card.ability.chip_bonus, mult = card.ability.mult_bonus })
   end,
 
   can_use = function(self, card)

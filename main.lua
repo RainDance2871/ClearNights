@@ -10,8 +10,6 @@ end
 --load mod files
 assert(SMODS.load_file('atlas.lua'))()
 assert(SMODS.load_file('config_menu.lua'))()
-assert(SMODS.load_file('drawstep.lua'))()
-assert(SMODS.load_file('shaders.lua'))()
 
 ClearNights.load_folder('decks')
 ClearNights.load_folder('functions')
@@ -27,8 +25,3 @@ if ClearNights.config.constellations then
     RainyDays.Constellations = true
   end
 end
-
-ClearNights.balatro_planets = {
-  'c_eris', 'c_ceres', 'c_planet_x', 'c_neptune', 'c_mars', 'c_earth',
-  'c_jupiter', 'c_saturn', 'c_venus', 'c_uranus', 'c_mercury', 'c_pluto'
-}
